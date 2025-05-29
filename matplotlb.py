@@ -1,13 +1,13 @@
 import pandas  as pd
 import matplotlib.pyplot as plt
 import os
-# Step 1: Define the file path
+
 
 file_path = 'C:/Users/user/Downloads/company_sales_data(2).csv'
 
 df = pd.read_csv(file_path)
 
-# Step 3a: Line plot for Total Profit
+#Line plot for Total Profit
 plt.figure(figsize=(10, 5))
 plt.plot(df['month_number'], df['total_profit'], marker='o', color='green')
 plt.title('Company Profit per Month')
@@ -18,7 +18,7 @@ plt.xticks(df['month_number'])
 plt.tight_layout()
 plt.show()
 
-# Step 3b: Subplot for Bathing Soap and Facewash Sales
+# Subplot for Bathing Soap and Facewash Sales
 plt.figure(figsize=(12, 6))
 
 # Subplot 1: Bathing Soap
